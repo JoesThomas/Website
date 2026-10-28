@@ -2,7 +2,7 @@
 .code-example{overflow-x:auto;padding:1.25rem;background:#142338;color:#e7f1fa;border-radius:12px;font-size:.9rem;line-height:1.65;tab-size:4}.code-example code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}.cardx h3{margin-top:1.5rem;font-size:1.1rem}
 
 /* Portfolio-only photographic background; image already exists in this repository. */
-body.portfolio-page{background:#0c1525 url("../../images/codeimage.jpg") center center / cover fixed no-repeat;color:#edf4fc}
+body:has(.portfolio){background:#0c1525 url("../../images/codeimage.jpg") center center / cover fixed no-repeat;color:#edf4fc}
 .portfolio{min-height:100vh;background:linear-gradient(115deg,rgba(8,18,35,.91),rgba(12,30,49,.82))}
 .portfolio .eyebrow{color:#71e3d2}.portfolio h1,.portfolio h2,.portfolio h3{color:#f6fbff}
 .portfolio .lead{color:#d9e7f4}.portfolio .cardx{background:rgba(14,27,45,.93);border:1px solid rgba(178,211,230,.25);box-shadow:0 16px 40px #0005;backdrop-filter:blur(5px)}
@@ -24,4 +24,4 @@ body.portfolio-page{background:#0c1525 url("../../images/codeimage.jpg") center 
 .arch-node span{color:#c4e5ed;font-size:.9rem}
 .arch-node.flow-center{border-color:#39c9b6;background:#10443f}
 .arch-note{font-size:.9rem;color:#bed2e4}
-@media(max-width:720px){.architecture{grid-template-columns:1fr}.arch-node{min-height:auto}body.portfolio-page{background-attachment:scroll}}
+@media(max-width:720px){.architecture{grid-template-columns:1fr}.arch-node{min-height:auto}body:has(.portfolio){background-attachment:scroll}}
