@@ -31,7 +31,13 @@ if(isset($_POST['submit'])){
     $mail->SMTPSecure = "tls";
     $mail->Host = "send.one.com";
     $mail->Port = 587; // or 587
-    $mail->IsHTML(true);    $mail->Username = getenv('PORTFOLIO_SMTP_USERNAME') ?: '';    $mail->Password = getenv('PORTFOLIO_SMTP_PASSWORD') ?: '';
+    $mail->IsHTML(true);    $smtpUsername = getenv('PORTFOLIO_SMTP_USERNAME') ?: '';
+    $smtpPassword = getenv('PORTFOLIO_SMTP_PASSWORD') ?: '';
+    if ($smtpUsername === '' || $smtpPassword === '') {
+        http_response_code(503);
+        exit('Contact form email delivery is temporarily unavailable.');
+    }
+    $mail->Username = $smtpUsername;    $mail->Password = $smtpPassword;
     $mail->SetFrom("alerts@joe-thomas.co.uk");
 
     $mail->addAddress($to,$first_name . " " . $last_name);
