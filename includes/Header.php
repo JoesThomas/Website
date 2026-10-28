@@ -1,7 +1,5 @@
 <?php
-if (session_status() === PHP_SESSION_NONE) {
-    if (session_status() === PHP_SESSION_NONE) { session_start(); }
-}
+if (session_status() === PHP_SESSION_NONE) { session_start(); }
 
 
 echo"
@@ -16,7 +14,7 @@ echo"
     <div class=\"collapse navbar-collapse\" id=\"navbarScroll\">
       <ul class=\"navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll\" style=\"--bs-scroll-height: 100px;\">
         <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarScrollingDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
+            <a class=\"nav-link dropdown-toggle\" href=\"allprojects.php\" id=\"navbarScrollingDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
             Projects
             </a>
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarScrollingDropdown\">
