@@ -1,0 +1,10 @@
+# Private runtime configuration — never commit credentials
+/config/
+/private-config/
+/secrets/
+smtp.json
+**/smtp.json
+*.local.json
+.env
+.env.*
+!.env.example
