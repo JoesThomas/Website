@@ -1,2 +1,27 @@
 :root{color-scheme:light}body{margin:0;background:#f7f9fc;color:#172339;font-family:system-ui,-apple-system,Segoe UI,sans-serif}.portfolio{padding:clamp(2rem,5vw,5rem) 1.25rem 5rem}.wrap{max-width:1080px;margin:auto}.eyebrow{font-size:.85rem;font-weight:750;letter-spacing:.12em;text-transform:uppercase;color:#147d72}.portfolio h1{font-size:clamp(2.25rem,5vw,4rem);line-height:1.12;letter-spacing:-.04em;max-width:850px}.portfolio h2{font-size:1.4rem}.lead{font-size:1.15rem;line-height:1.7;max-width:760px;color:#4a5970}.gridx{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,310px),1fr));gap:1.25rem;margin:2rem 0}.cardx{background:#fff;border:1px solid #e0e7ef;border-radius:16px;padding:1.5rem;box-shadow:0 10px 25px #14233b08}.cardx p,.cardx li{color:#43516a;line-height:1.65}.tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}.tags span{background:#eaf3f3;color:#13685f;border-radius:20px;padding:.3rem .7rem;font-size:.85rem}.actions{display:flex;flex-wrap:wrap;gap:.75rem;margin:1.5rem 0 2rem}.action{display:inline-block;padding:.8rem 1.15rem;border-radius:9px;border:1px solid #c8d3df;text-decoration:none;color:#16304b;background:white;font-weight:650}.action.primary{background:#106d63;color:#fff;border-color:#106d63}.action:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #26b6a4;outline-offset:3px}.field{margin:1rem 0}.field label{display:block;font-weight:650;margin-bottom:.4rem}.field input,.field textarea{width:100%;max-width:100%;box-sizing:border-box;padding:.8rem;border:1px solid #aebccc;border-radius:8px;background:#fff}.note{font-size:.9rem;color:#53657a}.status{padding:1rem;background:#e9f7f2;border-radius:8px}.status.error{background:#fff0ed}.cvframe{width:100%;height:70vh;border:1px solid #d5e0ea;border-radius:12px;background:white}@media(max-width:600px){.portfolio{padding-top:2rem}.cvframe{height:55vh}}
 .code-example{overflow-x:auto;padding:1.25rem;background:#142338;color:#e7f1fa;border-radius:12px;font-size:.9rem;line-height:1.65;tab-size:4}.code-example code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre}.cardx h3{margin-top:1.5rem;font-size:1.1rem}
+
+/* Portfolio-only photographic background; image already exists in this repository. */
+body:has(.portfolio){background:#0c1525 url("../../images/codeimage.jpg") center center / cover fixed no-repeat;color:#edf4fc}
+.portfolio{min-height:100vh;background:linear-gradient(115deg,rgba(8,18,35,.91),rgba(12,30,49,.82))}
+.portfolio .eyebrow{color:#71e3d2}.portfolio h1,.portfolio h2,.portfolio h3{color:#f6fbff}
+.portfolio .lead{color:#d9e7f4}.portfolio .cardx{background:rgba(14,27,45,.93);border:1px solid rgba(178,211,230,.25);box-shadow:0 16px 40px #0005;backdrop-filter:blur(5px)}
+.portfolio .cardx p,.portfolio .cardx li,.portfolio .note{color:#d0deeb}
+.portfolio .cardx strong{color:#f3f8ff}
+.portfolio .tags span{background:#174c53;color:#d6fffa}
+.portfolio a:not(.action){color:#8ae8f4;text-underline-offset:3px}
+.portfolio .action{background:#203a55;border-color:#56748e;color:#f3fbff}
+.portfolio .action.primary,.portfolio button.action.primary{background:#0f887e;border-color:#2ac3b3;color:white}
+.portfolio .action:hover{filter:brightness(1.15)}
+.portfolio .field label{color:#f5fbff}
+.portfolio .field input,.portfolio .field textarea{color:#13263d;background:#f8fbff}
+.portfolio .status{background:#174a42;color:#f0fff9}
+.portfolio .status.error{background:#643333;color:#fff}
+.portfolio .code-example{background:#071321;border:1px solid #31516a}
+.architecture{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.25rem 0}
+.arch-node{border:1px solid #3f7889;background:#102c43;border-radius:12px;padding:1rem;min-height:120px}
+.arch-node strong{display:block;color:#f5ffff;margin-bottom:.45rem}
+.arch-node span{color:#c4e5ed;font-size:.9rem}
+.arch-node.flow-center{border-color:#39c9b6;background:#10443f}
+.arch-note{font-size:.9rem;color:#bed2e4}
+@media(max-width:720px){.architecture{grid-template-columns:1fr}.arch-node{min-height:auto}body:has(.portfolio){background-attachment:scroll}}
