@@ -1,5 +1,5 @@
 <?php require_once __DIR__.'/includes/portfolio-seo.php'; ?>
-<!doctype html><html lang="en"><head><?php portfolioSeo('Projects | Joe Thomas — Software Engineer','Explore software engineering projects by Joe Thomas, including Python automation, APIs, and full-stack development.','/allprojects.php'); ?><link rel="stylesheet" href="assets/css/portfolio.css"></head><body>
+<!doctype html><html lang="en"><head><?php portfolioSeo('Projects | Joe Thomas — Software Engineer','Explore software engineering projects by Joe Thomas, including Python automation, APIs, and full-stack development.','/allprojects.php'); ?><link rel="stylesheet" href="assets/css/portfolio.css?v=4"></head><body>
 <?php include __DIR__.'/includes/Header.php'; ?>
 <main class="portfolio"><div class="wrap"><p class="eyebrow">Selected work</p><h1>Software built to solve real problems.</h1><p class="lead">I develop backend systems, APIs and automation tools, with experience spanning Python, Java, C#/.NET and cloud infrastructure. Here are examples of how I approach engineering challenges.</p>
 <div class="actions"><a class="action primary" href="CV.php">View my CV</a><a class="action" href="https://github.com/JoesThomas" target="_blank" rel="noopener noreferrer">GitHub profile</a></div>
