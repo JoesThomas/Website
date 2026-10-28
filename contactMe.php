@@ -22,7 +22,7 @@ if(($_SERVER['REQUEST_METHOD']??'GET')==='POST'){
     require_once __DIR__.'/includes/Exception.php';
     require_once __DIR__.'/includes/PHPMailer.php';
     require_once __DIR__.'/includes/SMTP.php';
-    $mailer=new PHPMailer\\PHPMailer\\PHPMailer(true);
+    $mailer=new PHPMailer\PHPMailer\PHPMailer(true);
     try{
       $mailer->isSMTP();
       $mailer->Host=$config['host'];
@@ -36,11 +36,11 @@ if(($_SERVER['REQUEST_METHOD']??'GET')==='POST'){
       $mailer->addAddress($config['recipient']);
       $mailer->addReplyTo($email,$name);
       $mailer->Subject='Portfolio enquiry';
-      $mailer->Body="Name: $name\\nEmail: $email\\n\\n$message";
+      $mailer->Body="Name: $name\nEmail: $email\n\n$message";
       $mailer->send();
       $status='Thanks — your message has been sent.';
       unset($_SESSION['portfolio_csrf']);
-    }catch(Exception $exception){
+    }catch(\Throwable $exception){
       error_log('Portfolio SMTP delivery failed');
       $error=true;$status='The message could not be sent. Please try again later.';
     }
