@@ -1,6 +1,6 @@
 <?php
 if (session_status() === PHP_SESSION_NONE) {
-    session_start();
+    if (session_status() === PHP_SESSION_NONE) { session_start(); }
 }
 
 
@@ -22,8 +22,8 @@ echo"
             <ul class=\"dropdown-menu\" aria-labelledby=\"navbarScrollingDropdown\">
             <li><a class=\"dropdown-item\" href=\"allprojects.php\">All Projects</a></li>
             <li><hr class=\"dropdown-divider\"></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Project 1</a></li>
-            <li><a class=\"dropdown-item\" href=\"#\">Project 2</a></li>
+            <li><a class=\"dropdown-item\" href=\"allprojects.php#receipt-printer\">Thermal Receipt Printer</a></li>
+            <li><a class=\"dropdown-item\" href=\"allprojects.php#professional-projects\">Professional Projects</a></li>
             </ul>
         </li>
 <!--        <li class=\"nav-item dropdown\">
@@ -54,7 +54,7 @@ else{echo date("l d") . "th " . date("F");}
 echo "</a>
              ";
 
-include "index.html";
+include __DIR__ . "/index.html";
 echo"
     </div>
   </div>
