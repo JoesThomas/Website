@@ -4,7 +4,7 @@ if (session_status() === PHP_SESSION_NONE) { session_start(); }
 
 echo"
 <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC\" crossorigin=\"anonymous\">
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
+<nav class=\"navbar navbar-expand-lg navbar-light bg-light\" style=\"position:relative;z-index:1050\">
   <div class=\"container-fluid\">
   
     <a class=\"navbar-brand\" href=\"index.php\">Home</a>
@@ -17,7 +17,7 @@ echo"
             <a class=\"nav-link dropdown-toggle\" href=\"allprojects.php\" id=\"navbarScrollingDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
             Projects
             </a>
-            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarScrollingDropdown\">
+            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarScrollingDropdown\" style=\"z-index:1060\">
             <li><a class=\"dropdown-item\" href=\"allprojects.php\">All Projects</a></li>
             <li><hr class=\"dropdown-divider\"></li>
             <li><a class=\"dropdown-item\" href=\"allprojects.php#receipt-printer\">Thermal Receipt Printer</a></li>
