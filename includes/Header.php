@@ -24,22 +24,11 @@ echo"
             <li><a class=\"dropdown-item\" href=\"allprojects.php#streamvault\">StreamVault</a></li>
             </ul>
         </li>
-<!--        <li class=\"nav-item dropdown\">
-            <a class=\"nav-link dropdown-toggle\" href=\"#\" id=\"navbarScrollingDropdown\" role=\"button\" data-bs-toggle=\"dropdown\" aria-expanded=\"false\">
-            Calculators
-            </a>
-            <ul class=\"dropdown-menu\" aria-labelledby=\"navbarScrollingDropdown\">
-            <li><a class=\"dropdown-item\" href=\"allcalculators.php\">All calculators</a></li>
-            <li><hr class=\"dropdown-divider\"></li>
-            <li><a class=\"dropdown-item\" href=\"expectedValueCalculator.php\">Expected Value</a></li>
-            </ul>
--->        </li>
+
         <li class=\"nav-item\">
             <a class=\"nav-link active\" aria-current=\"page\" href=\"contactMe.php\">Contact Me</a>
         </li>
-<!--        <li class=\"nav-item\">
-            <a class=\"nav-link active\" aria-current=\"page\" href=\"CV.php\">My CV</a>
--->        </li>
+
         <li class=\"nav-item\">
             <a class=\"nav-link active\" aria-current=\"page\" href=\"login.php\">Log In</a>
         </li>
