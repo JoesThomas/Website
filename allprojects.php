@@ -9,6 +9,54 @@
 <article class="cardx" id="job-assignment"><p class="eyebrow">GitHub project</p><h2>Job Application Assignment</h2><p>Source code for a software engineering assignment, available for review on GitHub.</p><div class="tags"><span>Software engineering</span><span>Source code</span></div><a href="https://github.com/JoesThomas/JobApplicationAssignment" target="_blank" rel="noopener noreferrer">View assignment repository</a></article>
 <article class="cardx"><p class="eyebrow">GitHub project</p><h2>Binary Expression Tree</h2><p>An additional code project from my public GitHub repositories.</p><a href="https://github.com/JoesThomas/BinaryExpressionTree" target="_blank" rel="noopener noreferrer">View repository</a></article>
 </div>
+<section class="cardx" id="receipt-demo"><p class="eyebrow">Interactive-free sample • fictional data</p><h2>Example daily receipt</h2><p>This is a fully fictional demonstration of the printed format. No live APIs, accounts, calendar entries, locations or printer are accessed.</p>
+<div style="max-width:410px;margin:1.5rem auto;padding:1.5rem 1rem;background:#fff;color:#161616;border-radius:3px;box-shadow:0 12px 28px rgba(0,0,0,.3);overflow-x:auto">
+<pre style="margin:0;font:12px/1.42 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre;display:table;margin-inline:auto;color:#161616">--------------------------------------------------
+               DAILY RECEIPT
+             DEMONSTRATION ONLY
+--------------------------------------------------
+                WEDNESDAY
+                28 OCTOBER
+--------------------------------------------------
+                  WEATHER
+             SAMPLE TOWN, UK
+
+Today        Max 15 C       Min 8 C
+Rain         35%            Cloudy
+Sunrise      07:51          Sunset 17:43
+
+HOUR       09:00  12:00  15:00  18:00
+TEMP         9 C   12 C   15 C   11 C
+RAIN        10%    20%    35%    15%
+--------------------------------------------------
+               TODAY'S CALENDAR
+
+[ ] 09:30-10:00  Morning planning
+[ ] 13:00-14:00  Project meeting
+[ ] 18:30-19:30  Exercise
+--------------------------------------------------
+                  TO-DO
+
+[ ] Review pull request
+[ ] Buy groceries
+[ ] Read for 20 minutes
+--------------------------------------------------
+              FINANCE SNAPSHOT
+              FICTIONAL FIGURES
+
+Current account                     GBP 850.00
+Savings                           GBP 4,200.00
+Upcoming payment                     GBP 25.00
+--------------------------------------------------
+              REMINDERS
+
+Vehicle MOT                         In 21 days
+Birthday reminder                    In 7 days
+--------------------------------------------------
+                 END OF DAY
+               SAMPLE OUTPUT
+--------------------------------------------------</pre></div>
+<p class="note">Illustrative content only; the live application may display different sections, layout and values depending on configuration.</p><a href="https://github.com/JoesThomas/ThermalReceiptPrinterDailyTasks" target="_blank" rel="noopener noreferrer">See the real Python implementation</a></section>
 <section class="cardx"><p class="eyebrow">Architecture</p><h2>How the receipt printer works</h2><p>A simplified view of the real application's data flow.</p><div class="architecture"><div class="arch-node"><strong>Data sources</strong><span>APIs, calendar, finance and local settings</span></div><div class="arch-node flow-center"><strong>Python pipeline</strong><span>Collect, format and build receipt</span></div><div class="arch-node"><strong>Output</strong><span>Web preview or thermal printer</span></div></div><p class="arch-note">Data sources → Python application → preview or printer.</p><a href="https://github.com/JoesThomas/ThermalReceiptPrinterDailyTasks/blob/main/app.py" target="_blank" rel="noopener noreferrer">Explore the actual orchestration code</a></section><section class="cardx"><p class="eyebrow">From the source code</p><h2>Real implementation examples</h2><p>These excerpts are taken from my public Thermal Receipt Printer repository. They show how I handle device constraints and protect private configuration.</p>
 <h3>1. Receipt-width formatting</h3><p>The receipt renderer wraps lines that exceed the configured print width while preserving divider lines.</p>
 <pre class="code-example"><code>def fit_text(value, width=COLUMNS):
