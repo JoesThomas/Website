@@ -31,9 +31,7 @@ if(isset($_POST['submit'])){
     $mail->SMTPSecure = "tls";
     $mail->Host = "send.one.com";
     $mail->Port = 587; // or 587
-    $mail->IsHTML(true);
-    $mail->Username = "alerts@joe-thomas.co.uk";
-    $mail->Password = "Geihgf55v";
+    $mail->IsHTML(true);    $mail->Username = getenv('PORTFOLIO_SMTP_USERNAME') ?: '';    $mail->Password = getenv('PORTFOLIO_SMTP_PASSWORD') ?: '';
     $mail->SetFrom("alerts@joe-thomas.co.uk");
 
     $mail->addAddress($to,$first_name . " " . $last_name);
