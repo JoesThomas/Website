@@ -23,7 +23,7 @@ echo"
             <li><a class=\"dropdown-item\" href=\"allprojects.php\">All Projects</a></li>
             <li><hr class=\"dropdown-divider\"></li>
             <li><a class=\"dropdown-item\" href=\"allprojects.php#receipt-printer\">Thermal Receipt Printer</a></li>
-            <li><a class=\"dropdown-item\" href=\"allprojects.php#professional-projects\">Professional Projects</a></li>
+            <li><a class=\"dropdown-item\" href=\"allprojects.php#streamvault\">StreamVault</a></li>
             </ul>
         </li>
 <!--        <li class=\"nav-item dropdown\">
