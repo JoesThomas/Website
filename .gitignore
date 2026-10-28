@@ -8,3 +8,6 @@ smtp.json
 .env
 .env.*
 !.env.example
+
+auth.json
+**/auth.json
