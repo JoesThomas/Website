@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://joe-thomas.co.uk/sitemap.xml
